@@ -1,12 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using static Zoo.Data.lib.Enums;
 
-namespace Zoo.Core
+namespace Zoo.Data.Entities
 {
     public class Enclosure
     {
         [Key]
-        public string Id { get; set; }
+        public int Id { get; set; }
 
         [Required]
         public string Name { get; set; }

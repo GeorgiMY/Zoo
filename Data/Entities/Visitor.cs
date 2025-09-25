@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using static Zoo.Data.lib.Enums;
 
-namespace Zoo.Core
+namespace Zoo.Data.Entities
 {
     public class Visitor
     {

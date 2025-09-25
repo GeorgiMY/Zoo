@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Zoo.Data.Entities;
+using System.ComponentModel.DataAnnotations.Schema;
 using static Zoo.Data.lib.Enums;
 
-namespace Zoo.Core
+namespace Zoo.Data.Entities
 {
     public class Animal
     {
@@ -13,16 +13,24 @@ namespace Zoo.Core
         public string Name { get; set; }
 
         [Required]
-        public Species SpeciesId { get; set; }
+        public int SpeciesId { get; set; }
+
+        [Required]
+        public Species Species { get; set; }
 
         [Required]
         public bool Gender { get; set; }
 
         [Required]
         public DateTime DateArrived { get; set; }
+
         [Required]
         public AnimalHealthStatuses HealthStatus { get; set; }
+
         [Required]
-        public Enclosure EnclosureId { get; set; }
+        public int EnclosureId { get; set; }
+        
+        [Required]
+        public Enclosure Enclosure { get; set; }
     }
 }

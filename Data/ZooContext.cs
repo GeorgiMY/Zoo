@@ -1,8 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Zoo.Core;
 using Zoo.Data.Entities;
 
-namespace Data
+namespace Zoo.Data
 {
     public class ZooContext : DbContext
     {
@@ -16,7 +15,7 @@ namespace Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            base.OnConfiguring(optionsBuilder.UseSqlServer("Data Source=STUDENT23;Initial Catalog=Zoo;Integrated Security=True;TrustServerCertificate=True"));
+            base.OnConfiguring(optionsBuilder.UseSqlServer("Data Source=(localdb)\\mssqllocaldb;Initial Catalog=Zoo;Integrated Security=True;TrustServerCertificate=True"));
         }
     }
 }

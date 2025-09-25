@@ -1,6 +1,4 @@
-﻿using Data;
-
-namespace Zoo.Data.lib
+﻿namespace Zoo.Data.lib
 {
     public static class Inputs
     {

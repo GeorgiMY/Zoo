@@ -1,5 +1,4 @@
-﻿using Data;
-using Zoo.Core;
+﻿using Zoo.Core;
 
 namespace Zoo.WinFormsApp
 {
